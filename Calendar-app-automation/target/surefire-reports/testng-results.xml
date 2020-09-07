@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="runner.TestRunner" duration-ms="51887" started-at="2020-09-05T23:23:32Z" finished-at="2020-09-05T23:24:24Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@23ceabc1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Command line test" duration-ms="51887" started-at="2020-09-05T23:23:32Z" finished-at="2020-09-05T23:24:24Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@23ceabc1]" name="setUpClass" is-config="true" duration-ms="197" started-at="2020-09-05T23:23:32Z" finished-at="2020-09-05T23:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:runner.TestRunner@23ceabc1]" name="before" is-config="true" duration-ms="0" started-at="2020-09-05T23:23:33Z" finished-at="2020-09-05T23:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@23ceabc1]" name="runScenario" duration-ms="51513" started-at="2020-09-05T23:23:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-05T23:24:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a new recurring(3 days a week) meeting, and make sure it doesnt repeat on successive days"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create a recurring meeting using Native Android/iOS Calendar App."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="after()[pri:0, instance:runner.TestRunner@23ceabc1]" name="after" is-config="true" duration-ms="0" started-at="2020-09-05T23:24:24Z" finished-at="2020-09-05T23:24:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@23ceabc1]" name="tearDownClass" is-config="true" duration-ms="91" started-at="2020-09-05T23:24:24Z" finished-at="2020-09-05T23:24:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- runner.TestRunner -->
+</testng-results>

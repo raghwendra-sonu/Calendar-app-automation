@@ -1,0 +1,181 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-05T23:23:33.313Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17904179900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Create a new recurring(3 days a week) meeting, and make sure it doesnt repeat on successive days",
+        "description": "",
+        "id": "create-a-recurring-meeting-using-native-android/ios-calendar-app.;create-a-new-recurring(3-days-a-week)-meeting--and-make-sure-it-doesnt-repeat-on-successive-days;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 832690100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassSteps.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1825607700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have launched the Calendar App",
+            "match": {
+              "location": "CalendarHomePageSteps.aUserNavigatesToHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2435305900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "It is not a non working 2020-9-17 day",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020-9-17",
+                  "offset": 24
+                }
+              ],
+              "location": "CalendarHomePageSteps.getWorkingDay(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6225301600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Meeting is not repeated on successive days",
+            "match": {
+              "location": "CreateMeetingSteps.CreateNonRepeatativeMeeting()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7019566300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I want to book a meeting with the title Recurring-Team Catch Up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Recurring-Team Catch Up",
+                  "offset": 40
+                }
+              ],
+              "location": "CreateMeetingSteps.createMeetingTitle(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 710809000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Set Meeting duration as 1 Hr in the evening",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 Hr",
+                  "offset": 24
+                }
+              ],
+              "location": "CreateMeetingSteps.setMeetingDuration(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6794587200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I invite sonucts@gmail.com of people",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sonucts@gmail.com",
+                  "offset": 9
+                }
+              ],
+              "location": "CreateMeetingSteps.invitePeople(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2476060500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I save the meeting",
+            "match": {
+              "location": "CreateMeetingSteps.saveMeeting()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5094914200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I Check if the meeting is created as expected for 2020-9-17 and Recurring-Team Catch Up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020-9-17",
+                  "offset": 50
+                },
+                {
+                  "val": "Recurring-Team Catch Up",
+                  "offset": 64
+                }
+              ],
+              "location": "CreateMeetingSteps.verifyMeetingCreated(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@calendar_app"
+          }
+        ]
+      }
+    ],
+    "name": "Create a recurring meeting using Native Android/iOS Calendar App.",
+    "description": "",
+    "id": "create-a-recurring-meeting-using-native-android/ios-calendar-app.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CalendarApp/Create_A_Meeting.feature",
+    "tags": []
+  }
+]
